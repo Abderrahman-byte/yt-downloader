@@ -15,7 +15,7 @@ def main() :
     url = args.url
     
     if not os.path.exists(args.l) :
-        args.l = cwd
+        os.makedirs(args.l)
 
     if url.startswith('https://www.youtube.com/watch') :
         pass
